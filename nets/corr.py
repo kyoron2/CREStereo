@@ -36,7 +36,7 @@ class AGCL:
         di_y, di_x = dilate[0], dilate[1]
         pady, padx = psize[0] // 2 * di_y, psize[1] // 2 * di_x
 
-                right_pad = manual_pad(right_feature, pady, padx)
+        right_pad = manual_pad(right_feature, pady, padx)
 
         corr_list = []
         for h in range(0, pady * 2 + 1, di_y):
